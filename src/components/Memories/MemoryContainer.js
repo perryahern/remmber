@@ -1,22 +1,22 @@
 import React from 'react';
 import './MemoryContainer.css';
+import '../Users/user-data.js';
 
-// This sets up the Container for each Memory
+// Sets and returns each memory container
 
 function MemoryContainer(props) {
   const memory = props.memory;
+  {console.log(props.memory);}
   return (
-    <div>  {/* memory */}
+    <div className={'container'}>  {/* memory */}
       <div>  {/* memory header */}
-        <img alt={memory.memoryContent}/>  {/* avatar thumbnail */}
-        {/* <h3>Perry</h3>  memory username */}
-        <h3>{memory.username}</h3>
+        {/*const avatar = Object.values(memory.username)*/}  {/* avatar thumbnail will go here when I can get from userData*/}
+        <h3>Username: {memory.username}</h3>
       </div>
-
       <div>  {/* memory body */}
-        <h4>{memory.memoryDate}</h4>  {/* memory date */}
-        {/* memory content */}
-        <h3><a href={memory.memoryLink} target={'_blank'}>{memory.memoryContent}</a></h3>
+        <h4>{memory.date}</h4>  {/* memory date */}
+        <h3><a href={memory.link} target={'_blank'}>{memory.content}</a></h3>  {/* memory content */}
+        <img src={memory.image} width='500' alt=''/>
       </div>
     </div>
   )

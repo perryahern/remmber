@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import MemoryContainer from './components/Memories/MemoryContainer.js';
 
 import memoryData from './components/Memories/memory-data.js';
@@ -32,12 +31,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Remmber, don't forget</h1>
-          <h4 className="App-subtitle">There are five Ws; let's start with two</h4>
+          <h1 className="App-title">Remmber</h1>
+          {/* <h4 className="App-subtitle">There are five Ws; let's start with two</h4> */}
+          <h3 className="App-subtitle">What &amp; When?</h3>
         </header>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           What will happen When?
-        </p>
+        </p> */}
         <div>  {/* memories */}
           {this.state.displayedMemories.map((memory) => {
             return (

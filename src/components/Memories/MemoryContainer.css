@@ -1,0 +1,10 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 500px;
+  background-color: honeydew;
+  /* background-color: rgb(70, 231, 220); */
+  /* border: 3px solid lightseagreen; */
+}
