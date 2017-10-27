@@ -1,5 +1,4 @@
-export const userData =[
-  {
+export const userData = {
     Perry: 'http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/256/Avengers-Thor-icon.png',
     Jeff: 'http://icons.iconarchive.com/icons/hopstarter/bioman/256/Bioman-Avatar-6-Peebo-icon.png',
     Jennifer: 'http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/256/Avengers-Black-Widow-icon.png',
@@ -11,6 +10,5 @@ export const userData =[
     Robert: 'http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/256/Avengers-Iron-Man-icon.png',
     Bruce: 'http://icons.iconarchive.com/icons/hopstarter/superhero-avatar/256/Avengers-Hulk-icon.png'
   }
-]
 
 export default userData;

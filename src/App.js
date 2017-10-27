@@ -41,7 +41,7 @@ class App extends Component {
         <div>  {/* memories */}
           {this.state.displayedMemories.map((memory) => {
             return (
-              <MemoryContainer memory={ memory } />
+              <MemoryContainer memory={ memory } avatar={ userData[memory.username] } />
             )
           })}
         </div>
