@@ -5,10 +5,15 @@
   margin: 20px auto;
   width: 500px;
   background-color: honeydew;
-  /* background-color: rgb(70, 231, 220); */
-  /* border: 3px solid lightseagreen; */
 }
 
+{/* >>>>> Need to correct avatar alignment with username */}
 .avatar {
   width: 30px;
+  border-radius: 5px;
+  padding: 0 10px 0 0;
+}
+
+.content-image {
+  width: 500px;
 }

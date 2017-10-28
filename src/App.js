@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MemoryContainer from './components/Memories/MemoryContainer.js';
 
 import memoryData from './components/Memories/memory-data.js';
-import userData from './components/Users/user-data.js';
+import userAvatars from './components/Users/user-avatars.js';
 import './App.css';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount() {                                        {/* content is loaded, display it */}
     this.setState({
       allMemories: memoryData,
       displayedMemories: memoryData
@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   filterMovies() {
-    const filteredMemories = this.state.allMemories;         {/* until ready to filter */}
+    const filteredMemories = this.state.allMemories;         {/* temporary until ready to filter */}
     this.setState({ displayedMemories: filteredMemories });
   }
 
@@ -32,16 +32,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Remmber</h1>
-          {/* <h4 className="App-subtitle">There are five Ws; let's start with two</h4> */}
           <h3 className="App-subtitle">What &amp; When?</h3>
         </header>
-        {/* <p className="App-intro">
-          What will happen When?
-        </p> */}
-        <div>  {/* memories */}
+        <div>                         {/* mount the memories and avatar links to the virtual DOM */}
           {this.state.displayedMemories.map((memory) => {
             return (
-              <MemoryContainer memory={ memory } avatar={ userData[memory.username] } />
+              <MemoryContainer memory={ memory } avatar={ userAvatars[memory.username] } />
             )
           })}
         </div>
