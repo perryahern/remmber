@@ -3,7 +3,7 @@ import './MemoryContainer.css';
 
 // Sets and returns each memory container with appropriate user avatar
 
-function MemoryContainer(props) {
+const MemoryContainer = (props) => {
   const memory = props.memory;
   return (
     <div className={'container'}>    {/* memory */}
