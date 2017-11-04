@@ -37,7 +37,11 @@ class App extends Component {
         <div>                         {/* mount the memories and avatar links to the virtual DOM */}
           {this.state.displayedMemories.map((memory) => {
             return (
-              <MemoryContainer memory={ memory } avatar={ userData[memory.username].avatar } />
+              <MemoryContainer
+                memory={ memory }
+                avatar={ userData[memory.username].avatar }
+                displayName={ userData[memory.username].displayName }
+              />
             )
           })}
         </div>
