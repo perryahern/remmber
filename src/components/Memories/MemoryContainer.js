@@ -1,7 +1,7 @@
 import React from 'react';
 import './MemoryContainer.css';
 
-// Sets and returns each memory container with appropriate user avatar
+// Sets and returns each memory container with user avatar
 
 const MemoryContainer = (props) => {
   const memory = props.memory;
