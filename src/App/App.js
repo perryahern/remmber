@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MemoryContainer from '../components/Memories/MemoryContainer.js';
 
 import memoryData from '../components/Memories/memory-data.js';
-import userAvatars from '../components/Users/user-avatars.js';
+import userData from '../components/Users/user-data.js';
 import './App.css';
 
 class App extends Component {
@@ -37,7 +37,7 @@ class App extends Component {
         <div>                         {/* mount the memories and avatar links to the virtual DOM */}
           {this.state.displayedMemories.map((memory) => {
             return (
-              <MemoryContainer memory={ memory } avatar={ userAvatars[memory.username] } />
+              <MemoryContainer memory={ memory } avatar={ userData[memory.username].avatar } />
             )
           })}
         </div>
