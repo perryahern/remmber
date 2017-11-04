@@ -3,8 +3,37 @@
   display: flex;
   flex-direction: column;
   margin: 20px auto;
-  width: 500px;
+  width: 400px;
   background-color: honeydew;
+}
+
+.container-top {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  background-color: tan;
+}
+
+.container-mid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-mid-left {
+  width: 200px;
+  background-color: lime;
+}
+
+.container-mid-right {
+  width: 200px;
+  background-color: red;
+}
+
+.container-bottom {
+  height: 50px;
+  width: 100%;
+  background-color: lightblue;
 }
 
 {/* >>>>> Need to correct avatar alignment with username */}
@@ -14,6 +43,11 @@
   padding: 0 10px 0 0;
 }
 
+.display-name {
+  font-style: oblique;
+  align-items: center; 
+}
+
 .content-image {
-  width: 500px;
+  width: 200px;
 }
