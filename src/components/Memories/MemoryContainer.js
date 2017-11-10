@@ -8,7 +8,7 @@ const MemoryContainer = (props) => {
   return (
     <div className={'container'}>            {/* memory */}
       <div className={'container-top'}>      {/* memory header */}
-        <h3 className={'display-name'}><img src={props.avatar} className={'avatar'} />{props.displayName}</h3>
+        <h3 className={'display-name'}><img src={props.avatar} className={'avatar'} alt={''} />{props.displayName}</h3>
       </div>
       <div className={'container-mid'}>                          {/* memory body */}
         <div className={'container-mid-left'}>
