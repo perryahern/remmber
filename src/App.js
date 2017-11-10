@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MemoryContainer from '../components/Memories/MemoryContainer.js';
+import MemoryContainer from './components/Memories/MemoryContainer.js';
 
-import memoryData from '../components/Memories/memory-data.js';
-import userData from '../components/Users/user-data.js';
+import memoryData from './components/Memories/memory-data.js';
+import userData from './components/Users/user-data.js';
 import './App.css';
 
 class App extends Component {
