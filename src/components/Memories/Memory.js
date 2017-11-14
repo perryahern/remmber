@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import './Memory.css';
+
 // import actions here when you have them!
 
 class Memory extends Component {
